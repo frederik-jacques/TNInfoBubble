@@ -1,0 +1,22 @@
+{
+  "name": "TNInfoBubble",
+  "version": "0.1.0",
+  "summary": "A short description of TNInfoBubble.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TNInfoBubble",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Frederik Jacques": "frederik@the-nerd.be"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TNInfoBubble.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TNInfoBubble/Classes/**/*"
+}

@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JbP-eK-M3h">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--TNInfoBubble-->
+        <scene sceneID="ew0-QF-WTk">
+            <objects>
+                <tableViewController id="iAN-e6-rbm" customClass="MenuTableViewController" customModule="TNInfoBubble_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cna-Ib-M6e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="47F-e1-4XC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="b4a-u1-TXf" style="IBUITableViewCellStyleDefault" id="GcO-Xg-pFW">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GcO-Xg-pFW" id="a3w-Tm-Eae">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="With Storyboards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4a-u1-TXf">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="show" id="R6g-j7-jBb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="jgG-2P-VvL" style="IBUITableViewCellStyleDefault" id="WvI-Qt-7Pv">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WvI-Qt-7Pv" id="Th5-HA-voA">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Programmatically" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jgG-2P-VvL">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Xz-U6-XO4" kind="show" id="dqq-Ew-Lls"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9Rz-sM-Niq">
+                                        <rect key="frame" x="0.0" y="152" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Rz-sM-Niq" id="NXB-iI-iL9">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="iAN-e6-rbm" id="PMk-ra-s6e"/>
+                            <outlet property="delegate" destination="iAN-e6-rbm" id="Q7S-Da-5mR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="TNInfoBubble" id="gYa-7Y-T4O"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1DJ-BB-0k8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-183"/>
+        </scene>
+        <!--Storyboard View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="StoryboardViewController" customModule="TNInfoBubble_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +88,118 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="bxw-ij-PAe" customClass="TNInfoBubbleView" customModule="TNInfoBubble">
+                                <rect key="frame" x="215" y="72" width="170" height="20"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="JRH-lf-LJR"/>
+                                    <constraint firstAttribute="height" constant="87" id="qXs-KM-Ay6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qXs-KM-Ay6"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="roT-t8-bIX">
+                                <rect key="frame" x="207" y="240" width="186" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIP-6I-jBb">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
+                                        <state key="normal" title="Show default bubble"/>
+                                        <connections>
+                                            <action selector="showDefaultButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="63t-70-19d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-61-v4T">
+                                        <rect key="frame" x="0.0" y="30" width="186" height="30"/>
+                                        <state key="normal" title="Show multiline bubble"/>
+                                        <connections>
+                                            <action selector="showMultilineButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DGl-mG-jRl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-Al-R2z">
+                                        <rect key="frame" x="0.0" y="60" width="186" height="30"/>
+                                        <state key="normal" title="Show configured bubble"/>
+                                        <connections>
+                                            <action selector="showConfiguredButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NKC-rC-KJ8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePa-xh-GRG">
+                                        <rect key="frame" x="0.0" y="90" width="186" height="30"/>
+                                        <state key="normal" title="Show bubble with delegate"/>
+                                        <connections>
+                                            <action selector="showButtonWithDelegateTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="di2-Aq-mpG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="roT-t8-bIX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="204-2s-uyj"/>
+                            <constraint firstItem="bxw-ij-PAe" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Kno-1T-8Pv"/>
+                            <constraint firstItem="bxw-ij-PAe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="gra-lD-uNI"/>
+                            <constraint firstItem="roT-t8-bIX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="q1u-WV-eeF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoBubble" destination="bxw-ij-PAe" id="WD3-jN-5vd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2030" y="-188"/>
+        </scene>
+        <!--Programmatically View Controller-->
+        <scene sceneID="pVh-3e-cAy">
+            <objects>
+                <viewController id="5Xz-U6-XO4" customClass="ProgrammaticallyViewController" customModule="TNInfoBubble_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ypO-uN-tyF"/>
+                        <viewControllerLayoutGuide type="bottom" id="veK-JT-L34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bYp-UZ-8RR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpL-io-Epl">
+                                <rect key="frame" x="255" y="285" width="90" height="30"/>
+                                <state key="normal" title="Show bubble"/>
+                                <connections>
+                                    <action selector="showBubbleTouched:" destination="5Xz-U6-XO4" eventType="touchUpInside" id="OQ1-Rf-WEz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wpL-io-Epl" firstAttribute="centerY" secondItem="bYp-UZ-8RR" secondAttribute="centerY" id="1nX-P3-mnk"/>
+                            <constraint firstItem="wpL-io-Epl" firstAttribute="centerX" secondItem="bYp-UZ-8RR" secondAttribute="centerX" id="Og5-n8-SMS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXW-p2-Ur4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="593"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nPc-aI-VCm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JbP-eK-M3h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8zD-5M-Guq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iAN-e6-rbm" kind="relationship" relationship="rootViewController" id="eep-XT-mOX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCE-va-Gtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="-183"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,6 @@
+framework module Pods_TNInfoBubble_Example {
+  umbrella header "Pods-TNInfoBubble_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TNInfoBubble'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TNInfoBubble.'
+  s.version          = '1.0.0'
+  s.summary          = 'TNInfoBubble is a customizable info bubble like the one being used in the Prisma app.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This Swift component creates an info bubble which is highly customizable. Out of the box it looks like the info bubble being used in the Prisma app.
+The component can be used within Storyboards or can be created via code.
+
+More information is available in the README.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/TNInfoBubble'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/frederik-jacques/TNInfoBubble'
+  s.screenshots     = 'https://cl.ly/3z02331F3y3B/tninfobubble.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Frederik Jacques' => 'frederik@the-nerd.be' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/TNInfoBubble.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/frederik-jacques/TNInfoBubble.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/thenerd_be'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'TNInfoBubble/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TNInfoBubble' => ['TNInfoBubble/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
