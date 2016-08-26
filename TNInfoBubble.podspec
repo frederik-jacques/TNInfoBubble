@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TNInfoBubble'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'TNInfoBubble is a customizable info bubble like the one being used in the Prisma app.'
 
 # This description is used to generate tags and improve search results.

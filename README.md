@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/TNInfoBubble.svg?style=flat)](http://cocoapods.org/pods/TNInfoBubble)
 [![Platform](https://img.shields.io/cocoapods/p/TNInfoBubble.svg?style=flat)](http://cocoapods.org/pods/TNInfoBubble)
 
-![Header image](https://cl.ly/3z02331F3y3B/tninfobubble.png)
+![Header image](https://cl.ly/380H0y290f21/tninfobubble.gif)
 
 # What
 TNInfoBubble is a component written in Swift to create a Prisma-like info bubble.  The looks of the info bubble can be changed.
